@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<agenda>
+    <personas>
+    
+        <persona nombre="Paco"></persona>
+        <apellidos>Paco Paco</apellidos>
+        <telefono1>628943321</telefono1>
+        <telefono2>628943322</telefono2>
+        <direccion calle="Calle Paco" numero="33"></direccion>
+        <email>paco@example.com</email>
+                                
+        <persona nombre="Juan"></persona>
+        <apellidos>Juan Juan</apellidos>
+        <telefono1>628943323</telefono1>
+        <telefono2>628943324</telefono2>
+        <direccion calle="Calle Juan" numero="34"></direccion>
+        <email>juan@example.com</email>
+        
+        <persona nombre="Luis"></persona>
+        <apellidos>Luis Luis</apellidos>
+        <telefono1>628943325</telefono1>
+        <telefono2>628943326</telefono2>
+        <direccion calle="Calle Luis" numero="35"></direccion>
+        <email>luis@example.com</email>
+
+    </personas>
+
+
+
+</agenda>

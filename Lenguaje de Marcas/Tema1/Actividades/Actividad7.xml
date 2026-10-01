@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<padre>
+    <hijo id="1">
+        <nombre>Hijo 1</nombre>
+        <apellido>Apellido1.1 Apellido2.1</apellido>
+    </hijo>
+    <hijo id="2">
+        <nombre>Hijo 2</nombre>
+        <apellidos>Apellido1.2 Apellido2.2</apellidos>
+    </hijo>
+</padre>    

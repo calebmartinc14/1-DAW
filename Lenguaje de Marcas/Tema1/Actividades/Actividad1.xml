@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documento>
+ <destacar importancia=1>documento XML</destacar>
+    <parrafo1>Comienza con la etiqueta</parrafo1>
+    <parrafo2>A continuacion colocamos un elemento sin contenido</parrafo2>
+    <imagen fichero="imagen.gif">
+</documento>

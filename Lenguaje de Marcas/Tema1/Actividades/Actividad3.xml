@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<agenda>
+    <contacto>
+        <nombre> AlumnoLM </nombre>
+        <ciudad cp='29000'>Málaga</ciudad>
+         <teléfono n="555985421"></teléfono>
+        <email>prueba@pruebas.com</email>
+        <casado v="no"></casado>
+    </contacto>
+</agenda>

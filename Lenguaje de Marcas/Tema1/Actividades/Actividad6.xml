@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<header>
+    <pedido id="1"></pedido>
+    <destinatario nombre="Juan Ramírez Sánchez"></destinatario>
+    <articulo codigo="A2023">Bicicleta</articulo>
+    <direccionEnvio calle="Barco" numero="4" piso="3" letra="A"></direccionEnvio>
+    <fechaEntrega>30-09-2019</fechaEntrega>
+</header>
