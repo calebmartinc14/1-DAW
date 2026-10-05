@@ -17,4 +17,5 @@ public class Ejercicio15{
 		System.out.println("¿Es tu dinero de alquiler suficiente?: " + dineroSuficiente);
 		
 	}
+
 }

@@ -21,6 +21,6 @@ public class Ejercicio36{
 			System.out.println("Sobresaliente");
 		} else {
 			System.out.println("Matrícula");
-		}	
+}	
 	}
 }

@@ -1,6 +1,5 @@
 public class Ejercicio33{
 	public static void main(String[] args){
-		//se añade el valor del caracter. No se pide que metamos uno por pantalla
 		char caracter = 'x';
 		
 		// El char se convierte a int para consultar su codigo ASCII

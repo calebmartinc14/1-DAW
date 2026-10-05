@@ -9,12 +9,11 @@ public class Ejercicio12{
 		//calculamos el porcentaje de rebaja y precio final
 		double descuento = precioNormal * (porcentajeRebaja / 100.0);
 		double precioFinal = precioNormal - descuento;
-		
 		//comenzamos a mostrar todos los datos que ya hemos procesado por pantalla
-	
 		System.out.println("Precio normal del artículo: " + precioNormal + " euros");
 		System.out.println("El porcentaje de rebaja aplicado es: " + porcentajeRebaja + "%");
 		System.out.println("El descuento aplicado es de: " + descuento + " euros"); 	
 		System.out.println("Precio final del artículo: " + precioFinal + " euros");
 	}
+
 }

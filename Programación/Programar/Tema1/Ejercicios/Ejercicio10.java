@@ -28,11 +28,7 @@ public class Ejercicio10 {
         String hora = new Scanner(System.in).nextLine();
 
         // 2. Mostrar el texto final concatenando las variables
-        System.out.println("El " + diaSemana + " día " + dia + " de " + mes + 
-		" tendrá lugar la reunión de evaluación del " + curso + " curso de " + estudios + 
-		" en el " + centro + " de " + ciudad + 
-		". Los profesores calificarán al alumnado y se prevé que a las " + hora + 
-		" horas las notas estén publicadas en el tablón de anuncios del centro.");
+        System.out.println("El " + diaSemana + " día " + dia + " de " + mes + " tendrá lugar la reunión de evaluación del " + curso + " curso de " + estudios + " en el " + centro + " de " + ciudad + ". Los profesores calificarán al alumnado y se prevé que a las " + hora + " horas las notas estén publicadas en el tablón de anuncios del centro.");
 		
 	}
 }
