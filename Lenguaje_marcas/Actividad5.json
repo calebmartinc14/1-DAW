@@ -1,0 +1,36 @@
+{
+  "agenda": {
+    "personas": [
+      {
+        "nombre": "Paco",
+        "apellidos": "Paco Paco",
+        "telefonos": ["628943321", "628943322"],
+        "direccion": {
+          "calle": "Calle Paco",
+          "numero": 33
+        },
+        "email": "paco@example.com"
+      },
+      {
+        "nombre": "Juan",
+        "apellidos": "Juan Juan",
+        "telefonos": ["628943323", "628943324"],
+        "direccion": {
+          "calle": "Calle Juan",
+          "numero": 34
+        },
+        "email": "juan@example.com"
+      },
+      {
+        "nombre": "Luis",
+        "apellidos": "Luis Luis",
+        "telefonos": ["628943325", "628943326"],
+        "direccion": {
+          "calle": "Calle Luis",
+          "numero": 35
+        },
+        "email": "luis@example.com"
+      }
+    ]
+  }
+}

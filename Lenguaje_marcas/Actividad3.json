@@ -1,0 +1,16 @@
+{
+  "agenda": {
+    "contactos": [
+      {
+        "nombre": "AlumnoLM",
+        "direccion": {
+          "ciudad": "Málaga",
+          "cp": 29000
+        },
+        "telefono": "555985421",
+        "email": "prueba@pruebas.com",
+        "casado": true
+      }
+    ]
+  }
+}
