@@ -1,0 +1,107 @@
+COMANDOS PARA COMPILAR Y EJECUTAR LENGUAJES DESDE CMD (WINDOWS)
+================================================================
+
+NOTA: cada lenguaje debe estar instalado y en el PATH.
+Para encadenar compilar + ejecutar en una línea usa && (el segundo
+comando solo se ejecuta si el primero no da error).
+
+
+1. LENGUAJES INTERPRETADOS (no necesitan compilar)
+---------------------------------------------------
+
+PYTHON
+  Ejecutar:     python hola.py
+  Versión:      python --version
+
+JAVASCRIPT (Node.js)
+  Ejecutar:     node hola.js
+  Versión:      node -v
+
+PHP
+  Ejecutar:     php hola.php
+  Versión:      php -v
+
+RUBY
+  Ejecutar:     ruby hola.rb
+  Versión:      ruby -v
+
+
+2. LENGUAJES COMPILADOS
+-----------------------
+
+C (GCC)
+  Compilar:     gcc hola.c -o hola.exe
+  Ejecutar:     hola.exe
+  Todo junto:   gcc hola.c -o hola.exe && hola.exe
+  Versión:      gcc --version
+
+C++ (G++)
+  Compilar:     g++ hola.cpp -o hola.exe
+  Ejecutar:     hola.exe
+  Todo junto:   g++ hola.cpp -o hola.exe && hola.exe
+  Versión:      g++ --version
+
+JAVA
+  Compilar:     javac Hola.java
+  Ejecutar:     java Hola
+  Todo junto:   javac Hola.java && java Hola
+  Atajo (Java 11+): java Hola.java
+  Versión:      java -version
+
+C# (.NET)
+  Compilar:     csc Hola.cs   (desde el Developer Command Prompt)
+  Ejecutar:     Hola.exe
+  Con proyecto: dotnet new console -n Hola
+                cd Hola
+                dotnet run
+  Versión:      dotnet --version
+
+GO
+  Compilar:     go build hola.go
+  Ejecutar:     hola.exe
+  Atajo:        go run hola.go
+  Versión:      go version
+
+RUST
+  Compilar:     rustc hola.rs
+  Ejecutar:     hola.exe
+  Con proyecto: cargo new hola
+                cd hola
+                cargo run
+  Versión:      rustc --version
+
+
+3. LENGUAJES QUE SE TRANSPILAN (opcionales)
+-------------------------------------------
+
+TYPESCRIPT
+  Instalar:     npm install -g typescript
+  Transpilar:   tsc hola.ts        (genera hola.js)
+  Ejecutar:     node hola.js
+  Todo junto:   tsc hola.ts && node hola.js
+  Versión:      tsc -v
+
+KOTLIN
+  Compilar:     kotlinc hola.kt -include-runtime -d hola.jar
+  Ejecutar:     java -jar hola.jar
+  Todo junto:   kotlinc hola.kt -include-runtime -d hola.jar && java -jar hola.jar
+
+
+4. RESUMEN RÁPIDO
+-----------------
+
+Lenguaje     Compilar / transpilar                 Ejecutar
+-----------  ------------------------------------  ----------------
+Python       (no necesita)                         python hola.py
+JavaScript   (no necesita)                         node hola.js
+PHP          (no necesita)                         php hola.php
+Ruby         (no necesita)                         ruby hola.rb
+Java         javac Hola.java                       java Hola
+C            gcc hola.c -o hola.exe                hola.exe
+C++          g++ hola.cpp -o hola.exe              hola.exe
+C#           csc Hola.cs                           Hola.exe
+Go           go build hola.go                      hola.exe
+Rust         rustc hola.rs                         hola.exe
+TypeScript   tsc hola.ts                           node hola.js
+Kotlin       kotlinc hola.kt -include-runtime      java -jar hola.jar
+             -d hola.jar
