@@ -1,0 +1,16 @@
+{
+  "pedido": {
+    "destinatario": "Juan Ramírez Sánchez",
+    "articulo": {
+      "nombre": "Bicicleta",
+      "codigo": "A2023"
+    },
+    "direccionEntrega": {
+      "calle": "Barco",
+      "numero": 4,
+      "piso": 3,
+      "letra": "A"
+    },
+    "fechaEntrega": "30-09-2019"
+  }
+}

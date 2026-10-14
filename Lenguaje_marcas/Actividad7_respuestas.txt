@@ -1,0 +1,10 @@
+Actividad 7
+
+1. ¿Está bien formado?
+Sí. Todas las etiquetas están correctamente anidadas y cerradas. Que aparezcan <apellido> en el primer hijo y <apellidos> en el segundo no incumple las reglas de buena formación XML.
+
+2. ¿Es válido? ¿Por qué?
+Con la información proporcionada no se puede afirmar que sea válido: el documento no incluye una DTD ni un XML Schema contra el que comprobarlo. Además, si el vocabulario esperado exige el mismo nombre de elemento para los apellidos de todos los hijos, la diferencia entre <apellido> y <apellidos> sería un error de validez.
+
+3. ¿Cómo podríamos saberlo?
+Definiendo o proporcionando una DTD o un XML Schema que establezca la estructura permitida y validando el documento con un validador XML.
