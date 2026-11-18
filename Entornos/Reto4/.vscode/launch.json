@@ -1,0 +1,103 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "JavaScript",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "TypeScript",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "tsx",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "name": "Ruby",
+      "type": "rdbg",
+      "request": "launch",
+      "script": "${file}",
+      "askParameters": false
+    },
+    {
+      "name": "Go",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${file}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "C",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": true,
+      "preLaunchTask": "compilar C"
+    },
+    {
+      "name": "C++",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": true,
+      "preLaunchTask": "compilar C++"
+    },
+    {
+      "name": "Rust",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "terminal": "integrated",
+      "preLaunchTask": "compilar Rust"
+    },
+    {
+      "name": "COBOL",
+      "type": "gdb",
+      "request": "launch",
+      "target": "${file}",
+      "arguments": "",
+      "cwd": "${fileDirname}",
+      "gdbpath": "gdb",
+      "cobcpath": "cobc",
+      "cobcargs": ["-free", "-x"],
+      "group": [],
+      "verbose": false
+    },
+    {
+      "name": "Haskell",
+      "type": "ghc",
+      "request": "launch",
+      "internalConsoleOptions": "openOnSessionStart",
+      "workspace": "${fileDirname}",
+      "startup": "${file}",
+      "startupFunc": "main",
+      "startupArgs": "",
+      "stopOnEntry": false,
+      "mainArgs": "",
+      "ghciPrompt": "H>>= ",
+      "ghciInitialPrompt": "ghci> ",
+      "ghciCmd": "ghci -ignore-dot-ghci",
+      "ghciEnv": {},
+      "logFile": "${workspaceFolder}\\.vscode\\phoityne.log",
+      "logLevel": "WARNING",
+      "forceInspect": false
+    }
+  ]
+}

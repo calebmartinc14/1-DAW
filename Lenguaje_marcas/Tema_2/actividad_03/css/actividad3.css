@@ -1,0 +1,44 @@
+.centrada {
+    display: block;
+    margin: 0 auto;
+    border-radius: 25%;
+}
+
+.alhambra {
+    width: 300px;
+    height: 200px;
+}
+
+.escudo {
+    display: block;
+    margin-left:auto;
+}
+
+figure {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: black;
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+    color: white;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 200px;
+    border-radius: 30%;
+}
+
+.h1 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}

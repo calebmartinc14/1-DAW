@@ -1,0 +1,167 @@
+import java.util.Scanner;
+public class Ejercicio1 {
+
+    public static String devolverIntensidad(String intensidad){
+        System.out.println("Introduzca un número entre 0 y 255");
+        double numero = new Scanner(System.in).nextDouble();
+        return numero>0 && numero <63 ? "Muy baja"
+                :numero>63 && numero<127 ? "Baja"
+                :numero>128 && numero<191 ? "Media"
+                :numero>192 && numero <255 ? "Alta":"Intensidad no válida";
+
+    }
+
+    public static String color(String colores){
+       String color = "naranja";
+       int intensidad = 221;
+       System.out.println("El color " + color + "tiene una intensidad de: " + intensidad);
+       return color;
+    }
+    public static void main(String[] args) {
+
+    }
+}
+----------------------------------------------------------------------------
+import java.util.Scanner;
+
+public class Ejercicio2 {
+    public static int esBisiesto(int año){
+        if(año/400 == 0 || año/4==0){
+            System.out.println("El año es bisiesto");
+        }else{
+            System.out.println("El año no es bisiesto.");
+        }
+        return año;
+    }
+    public static void main(String[] args) {
+        System.out.println("Introduzca un año");
+        int año1 = new Scanner(System.in).nextInt();
+        int anio1 = esBisiesto(año1);
+
+        System.out.println("¿Son los años 2025 y 2026 bisiestos?");
+        int anio2 = esBisiesto(2025);
+        System.out.println("El año 2025 es: " + anio2);
+        int anio3 = esBisiesto(2026);
+        System.out.println("El año 2026 es: " + anio3);
+    }
+}
+---------------------------------------------------------------------
+import java.util.Scanner;
+
+public class Ejercicio4 {
+    public static void pedirHora(){
+        System.out.println("Introduzca una hora española (0 a 23)");
+        int hora1 = new Scanner(System.in).nextInt();
+        System.out.println("Introduzca ahora los minutos (0 a 59)");
+        int minutos1 = new Scanner(System.in).nextInt();
+        System.out.println("¿Estamos en horario de verano? (true o false)");
+        boolean verano = new Scanner(System.in).nextBoolean();
+    }
+    public static String comprobarHora(int hora1, int minutos1){
+        if ((hora1<0 || hora1> 23) || (minutos1<0 || minutos1>59)){
+            System.out.println("La hora es incorrecta");
+        }else{
+            System.out.println("La hora es adecuada. Prosigamos.");
+        }
+        return comprobarHora(hora1,minutos1);
+    }
+
+    public static void main(String[] args) {
+        pedirHora();
+       // String compruebaHora = comprobarHora(pedirHora());
+    }
+}
+
+
+--------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class Ejercicio5 {
+    public static void preguntarPantalla(){
+        double temperaturaC = 0;
+        double temperaturaK = 0;
+        double temperaturaF = 0;
+        System.out.println("Elija a que temperatura estás");
+        double temperatura = new Scanner(System.in).nextInt();
+        System.out.println("Elija en que unidad está expresada. (Introduzca 1 para ºC, 2 para Kº y 3 para ºF");
+        int unidad = new Scanner(System.in).nextInt();
+        if (unidad==1){
+            System.out.println("Ha elegido centígrados.");
+            temperaturaC = temperatura;
+        }else if (unidad==2){
+            System.out.println("Ha elegido kelvin");
+            temperaturaK = temperatura;
+        }else if (unidad==3){
+            System.out.println("Ha elegido Fº");
+            temperaturaF = temperatura;
+        }
+    }
+
+    public static double calcularTemperatura(double temperatura, int unidad){
+        System.out.println("¿A qué unidad quiere ahora convertir su temperatura?");
+        System.out.println("""
+                Elija a que quiere convertir su temperatura.
+                1. Celsius
+                2. Kelvin
+                3. Farenheit
+                """);
+        int opcion = new Scanner(System.in).nextInt();
+        if (opcion==1){
+            System.out.println("Ha elegido convertir de centígrados a farenheit o a la inversa.");
+
+        }
+        return  opcion;
+    }
+
+
+    public static void main(String[] args) {
+       preguntarPantalla();
+      // double calcular = calcularTemperatura(temperatura, unidad);
+
+    }
+}
+
+
+-------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+
+public class Ejercicio6 {
+
+    public static boolean esVip(boolean clienteVip){
+        double descuento = 0;
+        double precio = 45;
+        int unidades = 3;
+        double subtotal = precio*unidades;
+        boolean vip = true;
+        if (clienteVip==true){
+            descuento=subtotal*0.10;
+        }else{
+            if(subtotal>100){
+                descuento = subtotal * 0.05;
+            }
+        }
+        return clienteVip;
+    }
+
+    public static double gastosEnvio(double gastos, double precioFinal){
+        if (precioFinal<50){
+            gastos=5;
+        }
+        double total = precioFinal * gastos;
+        return total;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("En la situación 1 el usuario es Vip.");
+        esVip(true);
+
+
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+{
+  "name": "reto4-ejercicio41",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

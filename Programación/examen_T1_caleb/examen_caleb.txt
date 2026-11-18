@@ -1,0 +1,149 @@
+import java.util.*;
+public class Ejercicio1Examen{
+	public static void main(String[] args){
+	System.out.println("Bienvenido al programa. Introduzca el precio del artículo: ");
+	double precioProducto = new Scanner(System.in).nextDouble();
+	System.out.println("Introduzca ahora el precio del artículo rebajado. ");
+	double precioRebajado = new Scanner(System.in).nextDouble();
+	double rebajaPrecio = precioProducto - precioRebajado;
+	double porcentajeRebaja = (100*precioRebajado) / precioProducto;
+	
+	System.out.println("La cantidad de dinero rebajado ha sido de: " + rebajaPrecio);
+	System.out.println("El porcentaje aplicado ha sido de: " + porcentajeRebaja);
+	
+	
+	}
+
+}
+
+
+
+import java.util.*;
+public class Ejercicio2Examen{
+	public static void main(String[] args){
+		System.out.println("Bienvenido. Introduzca por favor el radio de una esfera.");
+		double radioEsfera = new Scanner(System.in).nextDouble();
+	
+		if(radioEsfera>0){
+			radioEsfera = (4/3) * 3.14159 * (radioEsfera*radioEsfera*radioEsfera);
+			System.out.println("El volumen del radio calculado es: " + radioEsfera);
+		}else{
+			System.out.println("El radio debe ser positivo. ");
+		}
+	}
+}
+
+
+
+
+import java.util.*;
+public class Ejercicio3Examen{
+	public static void main(String[] args){
+		System.out.println("Bienvenido. Introduzca la cantidad de alumnos que participaron en la encuesta. ");
+		int numeroAlumnos = new Scanner(System.in).nextInt();
+		double porcentajeSatisfecho = 86.5;
+		double porcentajeNoResponde = 2.5;
+		double porcentajeInsatisfecho = 100 - porcentajeSatisfecho - porcentajeNoResponde;
+		
+		double alumnoSatisfecho = (numeroAlumnos*porcentajeSatisfecho) / 100;
+		System.out.println("La cantidad de los alumnos satisfechos son: " + alumnoSatisfecho);
+		double alumnoNoResponde = (numeroAlumnos*porcentajeNoResponde) / 100;
+		System.out.println("La cantidad de los alumnos que no responde son: " + alumnoNoResponde);
+		double alumnoInsatisfecho = (numeroAlumnos*porcentajeInsatisfecho) / 100;
+		System.out.println("La cantidad de los alumnos insatisfechos son: " + alumnoInsatisfecho);
+	}	
+}
+
+
+
+import java.util.*;
+public class Ejercicio4Examen{
+	public static void main(String[] args){
+		System.out.println("Bienvenido. Introduzca el primer número. ");
+		int numeroA = new Scanner(System.in).nextInt();
+		System.out.println("Bienvenido. Introduzca el segundo número. ");
+		int numeroB = new Scanner(System.in).nextInt();
+		
+		if(numeroB == 0){
+			System.out.println("No se puede dividir entre 0");
+			
+		
+		}else{
+			System.out.println("¿Quieres sacar decimales? (1= si / 2= no");
+			boolean respuestaDecimal = new Scanner(System.in).nextBoolean();
+			if (respuestaDecimal = 1){
+				double divisionDecimal = A % B;
+				System.out.println("La división de A / B da: " + divisionDecimal);	
+			}else if(respuestaDecimal = 2){
+				double divisionDecimal = A / B;
+				double divisionDecimal1 = A % B;
+				System.out.println("La división de A / B da: " + divisionDecimal + "y de resto " + divisionDecimal1);
+			}else{
+				System.out.println("Opción incorrecta ");
+			}
+		}
+	}	
+}
+
+
+
+
+import java.util.*;
+public class Ejercicio5Examen{
+	public static void main(String[] args){
+		System.out.println("Introduzca su nota media de expediente");
+		double notaExpediente = new Scanner(System.in).nextDouble();
+		if (notaExpediente>=7 && notaExpediente <9){
+			int puntuacion = 1;
+			System.out.println("Ha sumado a la puntuacion final " + puntuacion);
+		}else if(notaExpediente>=9 && notaExpediente<10){
+			int puntuacion = 1.5;
+			System.out.println("Ha sumado a la puntuacion final " + puntuacion);
+		}else{
+			int puntuacion = 2;
+			System.out.println("Ha sumado a la puntuacion final " + puntuacion);
+		}
+		System.out.println("¿Cual es su número de horas de formación?");
+		int horasFormacion = new Scanner(System.in).nextInt()
+		
+		if(horasFormacion>=20){
+			bonusFormacion=0.1
+			System.out.println("Ha ganado un 0.1 de bonus de formación");	
+		}else{
+			
+	}
+}
+
+
+
+import java.util.*;
+public class Ejercicio6Examen{
+	public static void main(String[] args){
+		System.out.println("Introduzca el valor de la hora 1");
+		int hora = new Scanner(System.in).nextInt();
+		System.out.println("Introduzca el valor de los minutos 1");
+		int minutos = new Scanner(System.in).nextInt();
+		System.out.println("Introduzca el valor de la hora 2");
+		int hora2 = new Scanner(System.in).nextInt();
+		System.out.println("Introduzca el valor de los minutos 2");
+		int minutos2 = new Scanner(System.in).nextInt();
+		
+		if((hora <0 && hora > 23 || minutos < 0 && minutos > 59) || (hora2 <0 && hora2 > 23 || minutos2 < 0 && minutos2 > 59)){
+			System.out.println("Datos incorrectos. Programa finalizado.");
+		}else{
+			if(hora>hora2 && minutos>minutos2){
+				System.out.println("La primera hora es posterior a la segunda");
+				diferenciaHora = hora-hora2;
+				diferenciaMinutos = minutos-minutos2;
+				System.out.println("La diferencia de horas y minutos es de: " + diferenciaHora + diferenciaMinutos);
+			}else if(hora2>hora && minutos2>minutos){
+					System.out.println("La segunda hora es posterior a la primera");
+					diferenciaHora1 = hora2-hora;
+					diferenciaMinutos1 = minutos2-minutos;
+					System.out.println("La diferencia de horas y minutos es de: " + diferenciaHora1 + diferenciaMinutos1);
+				}
+			}else if(hora==hora2 && minutos==minutos2){
+				System.out.println("Las dos horas son iguales");	
+			}
+	}
+}
